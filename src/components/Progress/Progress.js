@@ -1,5 +1,30 @@
 import React from "react";
+import { Doughnut } from "react-chartjs-2";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import "./Progress.css";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
+const data1 = {
+  labels: ["Completed", "Left"],
+  datasets: [
+    {
+      data: [60, 40],
+      backgroundColor: ["#4b93ff", "#e8e8e8"],
+      hoverOffset: 4,
+    },
+  ],
+};
+
+const data2 = {
+  labels: ["Completed", "Left"],
+  datasets: [
+    {
+      data: [80, 20],
+      backgroundColor: ["#4b93ff", "#e8e8e8"],
+      hoverOffset: 4,
+    },
+  ],
+};
 
 const Progress = () => {
   return (
@@ -19,11 +44,11 @@ const Progress = () => {
           </div>
           <div className="chart">
             <div className="course-chart">
-              <div className="course-pie"></div>
-              <p>Course Progress</p>
+              <Doughnut className="course-pie" data={data1} />
+              <p>Overall Progress</p>
             </div>
             <div className="current-chart">
-              <div className="current-pie"></div>
+              <Doughnut className="current-pie" data={data2} />
               <p>Milestone Progress</p>
             </div>
           </div>
@@ -55,7 +80,7 @@ const Progress = () => {
               <i className="next-icon fa-solid fa-angle-right"></i>
             </div>
           </div>
-          <div class="refer-card flip-card" tabIndex="0">
+          <div className="refer-card flip-card" tabIndex="0">
             <img
               className="refer-image"
               src="https://media.istockphoto.com/vectors/refer-a-friend-with-loudspeaker-in-speech-bubble-vector-id1156197725?k=20&m=1156197725&s=612x612&w=0&h=DI6NU9PZqu-TIuJjn8Puzi7MLzkxwLTIgeXaqME_CHg="

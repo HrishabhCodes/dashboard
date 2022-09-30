@@ -13,7 +13,7 @@ const Navbar = () => {
         <p className="greeting">Hi, John</p>
       </div>
       <div className="search-container">
-        <i class="notifications fa-solid fa-bell"></i>
+        <i className="notifications fa-solid fa-bell"></i>
         <input type="text" placeholder="Search" className="search" />
       </div>
     </div>
