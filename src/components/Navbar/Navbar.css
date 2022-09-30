@@ -1,0 +1,47 @@
+.navbar {
+  height: 15%;
+  width: 100%;
+  padding: 25px 40px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 35px;
+  border-radius: 40%;
+  margin-right: 15px;
+}
+
+.greeting {
+  font-size: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.notifications {
+  margin-right: 30px;
+  font-size: 20px;
+  color: #b0b0b0;
+  cursor: pointer;
+}
+
+.search {
+  font-family: "Montserrat", sans-serif;
+  height: 35px;
+  border-radius: 30px;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  color: #3f3f3f;
+  box-shadow: #252841a9 0px 5px 100px -2px, #0000005f 0px 30px 60px -30px;
+}
